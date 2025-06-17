@@ -1,6 +1,7 @@
 base:
   '*':
   - akamai.pkg
+  - mine
   'salt*':
   - haproxy
   'web*':

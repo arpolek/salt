@@ -44,7 +44,7 @@ listen stats
 
 backend app
     balance     roundrobin
-    {%- for server in salt['pillar.get']('haproxy:backends') %}
-    server  server{{ loop.index }} {{ server }}:80 check
+    {%- for server_name, server_ips in salt['mine.get']('web*', 'myip').items() %}
+    server {{ server_name }} {{ server_ips[0] }}:80 check
     {%- endfor %}
 

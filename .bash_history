@@ -112,7 +112,6 @@ git commit -m "initial commit"
 git push 
 git push -u origin main 
 git push -u origin master 
-echo "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" > ../token
 ls -al .. 
 ls -al /srv 
 cp /srv/ . 
@@ -141,7 +140,6 @@ ls -al
 cp -r /etc/salt . 
 cp -r /srv/ . 
 git status 
-vi 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
 vi srv/salt/akamai/pkg.sls
 git status 
 ls -al 

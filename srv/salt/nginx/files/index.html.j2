@@ -1,0 +1,8 @@
+<h2>training noise</h2>
+
+minion id: {{ grains.id }} - option 1
+
+minion id: {{ grains['id'] }} - option 2 
+
+eth0 ip: {{ salt['grains.get']('ip4_interfaces:eth0') }} - option 3
+bond0 ip: {{ salt['grains.get']('ip4_interfaces:bond0', '0.0.0.0') }} default value

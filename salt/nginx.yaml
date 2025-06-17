@@ -1,0 +1,16 @@
+# nginx:
+#   pkg.installed: []
+#   service.running:
+#   - require:
+#     - pkg: nginx
+
+nginx-pkg:
+  pkg.installed:
+  - pkgs:
+    - nginx
+
+nginx-service:
+  service.running:
+  - name: nginx
+  - require:
+    - pkg: nginx-pkg

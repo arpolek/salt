@@ -1,0 +1,4 @@
+include:
+- .pkg
+- .service
+- .config

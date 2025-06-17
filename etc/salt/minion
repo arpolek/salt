@@ -8,3 +8,20 @@ id: salt.apolek.lab.trng.me
 log_level: info
 master: 127.0.0.1
 master_finger: 9b:45:b7:2b:4c:ea:99:eb:7e:07:57:28:d2:18:d2:7e:3e:08:17:e7:6e:b5:50:7a:4b:03:2c:9d:21:92:2b:2d
+
+redis.host: 'localhost'
+
+beacons:
+  load:
+  - averages:
+      1m:
+      - 0.0
+      - 0.05
+      5m:
+      - 0.0
+      - 0.05
+      15m:
+      - 0.0
+      - 0.05
+  - emitatstartup: true
+  - onchangeonly: false

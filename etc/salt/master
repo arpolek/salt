@@ -36,6 +36,7 @@ engines: []
 env_order: []
 event_match_type: startswith
 event_publisher_niceness: null
+# event_return: redis
 event_return: ''
 event_return_blacklist: []
 event_return_niceness: null
@@ -357,6 +358,8 @@ zmq_backlog: 1000
 zmq_filtering: false
 zmq_monitor: false
 
-redis.db: '0'
-redis.host: localhost
-redis.port: 6379
+# redis.db: '0'
+# redis.host: localhost
+# redis.port: 6379
+
+# return: redis
